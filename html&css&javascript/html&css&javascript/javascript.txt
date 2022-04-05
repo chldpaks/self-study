@@ -1,0 +1,316 @@
+자바스크립트는 사용자와 상호작용을 하는 언어이다.
+웹브라우저는 한번 화면에 출력되면 자기 자신을 바꿀 수 없다.
+하지만, 자바스크립트를 이용하면 바꿀 수 있다. 즉 자바스크립트가 HTML을 제어하는 언어이다.
+
+javascript는 동적이며 html은 정적이다.
+
+onclick속성의 속성값은 반드시 자바스크립트가 와야한다.
+
+toUpperCase() : 소문자를 대문자로 
+indexOf(searchValue[, fromIndex]) : 찾고자하는 값을 넣어라 
+trim() : 공백을 없애준다
+
+변수는 대입 연산자를 통해 값이 바뀔 수 있다는 뜻을 갖고 있다.
+영어로는 variable이라 한다.
+하지만 숫자 1은 언제나 1이기 때문에 '항상 상'자를 써서, 바뀌지 않는다는 뜻에서 '상수'
+영어로는 constant라 한다.
+
+console창에서 실행을 유보하고 싶을 때는 shift+enter
+var이란 variable의 약자이다.
+
+style이라는 속성에 CSS를 넣으면 디자인을 할 수 있다는 것과
+속성이라는 문법의 구조를 파악하고 있다면 검색을 통해 문제를 해결할 준비가 된다.
+
+클래스라는 말은 무언가를 그룹핑한다는 뜻 ex)반
+ID라는 말은 어떤 한 가지 대상을 식별한다는 뜻. 중복x ex)학번
+그러므로 클래스 선택자가 더 포괄적이다. 그렇기 때문에 기본적으로 클래스 위에 ID를 얹어서 디자인하는 것이
+훨씬 더 효율적이다.
+
+document.querySelector() : 제공한 선택자 또는 선택자 뭉치와 일치하는 문서 내 첫 번째 element를 반환
+웹브라우저에게 질의한다라는 뜻으로 생각하면 된다 Selector는 css의 Selector라는 뜻
+
+HTML과 JavaScript는 둘 다 컴퓨터 언어이다. 하지만 JavaScript는 컴퓨터 언어이면서 동시에 컴퓨터
+프로그랭밍 언어라고하고 HTML은 컴퓨터 프로그래밍 언어라고 하지는 않는다.
+프로그램이란 말의 중심에는 순서라는 의미가 깊숙히 자리잡고 있다. 이 순서를 만드는 행위를 프로그래밍이라 한다.
+그 순서를 만드는 사람을 프로그래머라 한다.
+HTML은 웹페이지를 묘사하는 목적의 언어이기 때문에 시간의 순서에 따라서 무엇을 할 필요가 없다.
+하지만 JavaScript는 사용자와 상호작용하기 위해서 고안된 컴퓨터 언어이고 그러기 위해서는 시간의 순서에 따라서
+웹브라우저의 여러 기능이 실행되어야 하기 때문에 프로그래밍이라고 하는 형태를 띄고있다.
+
+=== 연산자는 좌항과 우항의 관계의 따라서 true, false 둘 중 하나의 값을 만들어내는 연산자이다.
+HTMl에서 꺽쇠라는 문법이기 때문에 이런 경우에는 &.. Less than이라는 뜻에서 &lt 가 <이다.
+
+리팩토링이란 동작하는것은 그대로 두고 코드 자체를 아주 효율적으로 만들어서 코드의 가독성을 높이고,
+유지보수를 하기 편리하게 만들고, 중복된 코드를 낮추고 이러한 방향으로 코드를 다시 개선하는 작업이다.
+
+this는 이벤트가 소속된 태그를 가리키도록 약속되어 있는 특수한 키워드이다.
+
+push는 데이터를 끝에 추가
+
+반복문이라는 것은 순서대로 실행되는 프로그램의 실행 순서의 흐름을 제어하는 제어문이라고 할 수 있다. 조건문과 함께
+
+함수로 전달하는 값을 인자, 영어로는 argument라 부르고
+이 값을 받아서 함수 안으로 매개해주는 변수들을 매개변수, 영어로는 parameter라고 부른다. 
+
+함수는 입력과 출력, 두 가지로 이루어져있다. 입력은 parameter와 argument라는 것이고
+출력은 return이다.
+
+독립된 함수를 만들게 되면 전역객체를 가리키게 된다.
+
+객체란 서로 연관된 함수와 서로 연관된 변수를 같은 이름으로 그룹핑해서 잘 정리정돈하기 위한 도구이다.
+한줄이라 하더라도, 의미가 좀 불명확하거나 시간이 지나면 무슨 뜻이었는지 파악하기 어려울때는 
+함수를 통해 그 로직에 이름을 부여하하는 것도 좋은 전략이다.
+객체라는 것은 폴더라는 관점으로 봐도 무방하다.
+document라고 되어있는 것은 객체라는 것을 알 수 있다. querySelector하는 것이 document라는 객체에
+속해있는 함수라는 것을 알 수 있다. 객체에 속해 있는 함수는 함수라고 하지 않고 메소드라고 부른다.
+
+배열이라는 도구는 정보를 담는 그릇이면서 동시에 정보가 순서대로 저장된다는 특징이 있다.
+반면, 순성없이 정보를 저장할 수 있는 것이 바로 객체이다.
+객체를 만들 때 사용하는 기호를 object literal이라 한다. 중괄호를 쓴다.
+배열은 대괄호, 객체는 중괄호
+
+.은 object access operator라고 불린다. 즉 여기 있는 이 객체에 액세스, 접근하는 오퍼레이터이다.
+
+객체에는 함수도 담을 수 있다.
+객체의 이름이 바뀐다면 데이터를 못 가져오는 현상이 생길 수 있으므로 함수 안에서 이 함수가 소속된 객체를 가리키는 약속된
+this라는 것을 쓰면된다. 그러므로 변수 이름이 바뀌어도 this는 자기 자신을 가리키 때문에 영향을 받지 않는다.
+객체에 소속된 변수의 값으로 함수를 지정할 수 있고 그렇게 되면 객체에 소속된 함수를 만들 수 있다.
+객체에 소속된 함수를 메소드라 한다. 객체에 소속된 변수들을 변수라고 하지않고 프로퍼티라 부른다.
+
+객체는 객체의 프로퍼티와 프로퍼티를 구분할때 콤마를 찍는다.
+함수는 코드가 많아지면 정리정돈하는 도구이다.
+객체는 함수와 변수가 많아지면 연관된 것들을 서로 그룹핑해서 정리정돈하는 도구이다.
+
+src = source의 약자
+
+캐시는 저장한다라는 뜻이다.
+
+접속은 적을수록 좋지만 캐시 때문에 한번 웹브라우저에 다운로드된 이런 파일은 보통 컴퓨터에 저장해둔다.
+다음에 접속할 때 저장된 파일을 읽어서 네트워크를 통하지 않게한다. 그럼 서버 입장에서는 훨씬 더 비용을
+절감할 수 있고 사용자 입장에서도 네트워크 트래픽도 절감할수 있고 훨씬 더 빠르게  웹페이지를 화면에 표시할 수
+있다라는 효과가 있기 때문에 파일로 쪼개는것이 훨씬 더 효율적이다.
+
+library vs framework
+library는 내가 만들고자하는 프로그램에 필요한 부품이 되는 소프트웨를 잘 정리정돈해놓은, 재사용하기 쉽도록
+되어있는 소프트웨어를 라이브러리라 한다.
+fraemwork는 만들고자하는 것이 있을 때 만들고자 하는 것이 무엇이냐에 따라서 그것을 만들려고 할 때
+언제나 필요한 공통적인것이 있고 만들고자하는 것에 대한 기획 의도에 따라서 달라지는 부분이 있을것이다.
+공통적인 부분은 프레임워크라는 것이 만들어놓고 만들고자하는 것의 기능에 따라, 또는 개성에 따라서 달라지는
+부분만 살짝 수정하는 걸 통해서 처음부터 끝까지 만들지 않도록 해주는 반제품과 같은 것이 프레임워크라 볼 수 있다.
+라이브러리는 소프트웨어를 만드는 내가 라이브러리를 당겨와서 쓰는 느낌이라면
+프레임워크는 프레임워크 안에 우리가 들어가서 작업하는 느낌이다.
+
+JavaScript 커뮤니티에서 가장 중요한 라이브러리 중 하나인 JQuery가 있다.
+
+CDN은 Content Delivery Network의 약자이다.
+많은 라이브러리들이 CDN이라는 것을 통해서 자기들의 서버에다가 파일을 보관해놓고 script src를 통해서
+가져갈 수 있도록 하는 방식을 취하고 있다.
+
+$('a')는 이 웹페이지의 모든 a 태그를 JQuery로 제어하겠다는 뜻이다.
+jQuery를 이용해서 css를 바꾸고싶을 때는 .css() 쓰면된다.
+
+UI(User Interface) vs API(Application Programming Interface)
+사용자가 시스템을 제어하기 위해서 사용하는 조작 장치를 UI라고 부른다.
+프로그래밍을 할 때 사용하는 조작 장치들을 API라고 부른다.
+모든 애플리케이션들은 API를 프로그래밍적으로, 즉 순선대로 실행하는 것을 통해서 만들어진다. 
+
+웹페이지에 있는 어떤 태그를 삭제하고 싶거나, 어떤 태그에 자식 태그를 추가하고싶다면 document 객체를 좀 더 자세히 살펴봐라. 
+만약에 document 객체를 통해서도 찾을 수 없다면 DOM으로 수색 범위를 넓혀보자. DOM 객체, document 객체는 DOM의 일부다. 
+웹페이지가 아니라 웹브라우저 자체를 제어해야 한다면 window 객체를 조사해보자.
+웹페이지를 리로드하지 않고 정보를 변경하고싶다면 ajax가 필요할거다. 
+또 웹페이지가 리로드되어도 현재 상태를 유지하고 싶다면 cookie를 배우자. 사용자를 위한 개인화된 서비스를 제공할 수 있다.
+인터넷이 끊겨도 동작하는 웹 페이지를 만들고 싶다면 offline web applincation을 찾아보자.
+화상 통신 웹 앱을 만들고싶다면 webRTC라는 것이 있다.
+사용자의 음성을 인식하고 음성으로 정보를 전달하고 싶다면 speech로 시작하는 API들을 살펴보자.
+3차원 그래픽으로 게임과 같은 것을 만들고 싶다면 webGL을 살펴보자.
+가상현실에 관심이 많으면 webVR이라는 것도 있다.
+
+----------------------------------------------------------
+
+<<Varaibles>>
+console.log는 괄호 안의 메시지를 콘솔창에 출력하는 방식
+
+변수 : 데이터를 담을 수 있는 대상
+
+let myNumber = 100;
+console.log(myNumber) //100
+
+기본타입(Primitive type)
+: Number, String, Boolean, Undefined, Null
+
+참조타입(Reference type) 
+Object
+ex) let myObject = { name : 'Yaeman Choe', isDeveloper: true}
+
+Array
+ex) let studentName = ['Yaeman Choe', 'Kongji'];
+
+Function
+ex) function myFunction () {
+		let name = 'Yaeman Choe',
+		console.log(name)
+		return name
+	}
+
+문자열 서로 합치기
+console.log('2' + '2') //"22"
+console.log(22) //22
+
+문자열의 총 길이 구하기
+const myString = 'Hello';
+console.log(myString.length) //5
+console.log("The length of Hello is" , 'Hello'.length) //The length of Hello is 5 
+
+<<Function>>
+//함수 선언
+function sayHi() {
+	console.log('hi')
+}
+
+sayHi(); //함수의 실행
+
+function sayHello() {
+	let friend = 'Yaeman Choe';
+	return 'Return' + friend
+}
+
+console.log(sayHello()) //"Return Yaeman choe"
+
+return : 함수의 output 반환하는 결과물
+console.log : 단순히 화면에 출력
+
+return : 변수에 할당 가능
+console.log : 변수에 할당 불가능
+ex)
+let number = console.log(10);
+console.log(number) //undefined -> output을 만드는 기능이 아니기 때문에 변수에 할당 할 수 없다.
+
+function sayInput(name) {
+	return 'Input' + name
+}//input -> parameter
+
+let greeting = sayInput('Hi'); //argument
+console.log(greeting) //"Input Hi"
+
+<<조건문>>
+console.log(1 + 1 === 2) //true
+
+비교 연산자 : ===(일치), ==(동등)
+
+function isFamilly(who) {
+	//함수의 인자가 SON -> NOPE
+	//함수의 인자가 DAD -> GOOD
+	//함수의 인자가 GRAND FATHER -> BE CAREFUL
+	//나머지인 경우 -> WHO are you
+	if(who === "son") {
+		return "Nope!"
+	} else if(who === "dad") {
+		return "Good!"
+	} else if(who === "grand father") {
+		return "Be careful!"
+	} else {
+		return "Who are you?"
+	}
+}
+
+console.log(isFamilly("son")) //Nope!
+
+논리 연산자 or
+ex) console.log(1+1 === 2 || 1+1 === 3) //true
+논리 연산자 and
+ex) console.log(1+1 === 2 && 1+1 === 3) //false
+
+참 같은 값(Truthy)인 값이란 불리언을 기대하는 문맥에서 true로 평가되는 값이다.
+거짓 같은 값으로 정의된 값이 아니면 모두 참 같은 값으로 평가
+ex) false, 0, -0, 0n, "", null, undefined와 NaN 등)
+
+let a = 0; // falsy
+let b = 100; //truthy
+if(a) {
+	console.log('i am falsy')
+} else if (b) {
+	console.log('i am truthy')
+}
+
+
+<<배열>>
+let myArray = [1, 2, 'good', true]
+//요소 길이 구하기
+console.log(myArray.length) //4
+
+//요소 추가하기
+myArray.push('apple')
+console.llog(myArray) //[1, 2, "good", true, "apple"]
+
+//요소 삭제하기 (pop, shift, splice, filter)
+myArray.pop() //array의 가장 끝에서부터 요소를 삭제시켜주는 기능
+console.log(myArray) //[1, 2, 'good']
+myArray.shift() // 배열의 가장 앞부분에서부터 요소를 삭제시켜주는 기능
+console.log(myArray) //[2, 'good', ture]
+
+let myArray = [1, 2, 'good', [10, 20, 30], true]
+console.log(myArray) //[1, 2, 'good', [10, 20, 30], true]
+console.log(myArray[3]) //[10, 20, 30]
+console.log(myArray[3][0]) //10
+
+console.log(myArray.length)
+console.log(myArray[myArray.length - 1]) // 배열의 가장 마지막 요소
+
+<<반복문>>
+동일한 동작을 조건을 만족할 때 까지 반복해서 수행
+for(초기 상태; 조건; counter 변화) {
+	수행할 동작
+}
+
+빈 배열 myArray에 100~110까지 요소를 추가하기
+let myArray = []
+//반복적으로 100부터 110까지 myArray.push()
+for(let i = 100; i < 111; i++) {
+	myArray.push(i)
+}
+console.log(myArray) //[100, 101, .... 109, 110]
+
+Array의 요소를 순회하며 콘솔에 출력하기
+let numbers = [1, 2, 3, 4]
+for(let i=0; i<4; i++) {
+	console.log(numbers[i])
+}
+
+Array의 요소를 순회하며 1씩 더하여 콘솔에 출력하기
+let numbers = [1, 2, 3, 4, 5]
+for(let index = 0; index < numbers.length; index++) {
+	console.log(numbers[index] + 1)
+}
+
+<<객체>>
+let myObject = {
+	key: value
+}
+
+ex)
+let myself = {
+	name : 'Yaeman Choe',
+	location: {
+		country : 'South Korea',
+		city : 'Seoul'
+	},
+	age: 29,
+	cats: ['콩쥐', '팥쥐']
+}
+
+객체에 저장된 데이터에 접근하기
+1. Dot Notation
+console.log(myself.name) // 'Yaeman Choe'
+2. Bracket Notation
+console.log(myself['name']) // 'Yaeman Choe'
+
+Dot Notation vs Bracket Notation ?
+Dot notation 숫자로 시작하는 키에 접근x, 띄어쓰기가 포함된 키에 접근x, 
+속성 키에 변수가 포함되어 있으면 Dot Notaion에 접근할 수 없다. 즉 변수를 사용할 수 없다. 
+변수라고 생각하지않고 Object안에 들어있는 해당 키를 찾아가서 출력한다.
+반면 Bracket notation에서는 모두 가능하며 변수 사용 가능. 
+ex)
+let myKey = 'cats'
+console.log(myself.myKey) //undefined
+ 
+

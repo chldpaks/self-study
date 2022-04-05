@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var coworkers = {
+        "programmer":"yaeman",
+        "designer":"kongji"
+      };
+      document.write("programmer : "+coworkers.programmer+"<br>");
+      document.write("designer : "+coworkers.designer+"<br>");
+      coworkers.bookkeeper = "duru"; //객체가 만들어진 다음에 정보를 추가하고 싶다면
+      document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+      coworkers["data scientist"] = "taeho"; //데이 사이언티스트를 추가하고 싶다면
+      document.write("data scientist : "+coworkers["data scientist"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+      for(var key in coworkers) { //coworkers라는 변수가 가리키는 객체에 있는 key값들을 가져오는 반복문이다
+        document.write(key+' : '+coworkers[key]+'<br>');
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+      coworkers.showAll = function(){ // == var showAll = function(){}, function showAll(){}
+        for(var key in this) { //coworkers라는 변수가 가리키는 객체에 있는 key값들을 가져오는 반복문이다
+          document.write(key+' : '+this[key]+'<br>');
+        }
+      }
+      coworkers.showAll();
+    </script>
+  </body>
+</html>
